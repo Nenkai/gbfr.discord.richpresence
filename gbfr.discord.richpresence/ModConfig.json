@@ -1,0 +1,56 @@
+{
+  "ModId": "gbfr.discord.richpresence",
+  "ModName": "Discord Rich Presence Support",
+  "ModAuthor": "Nenkai",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Implements Discord Rich Presence for Relink, with support for displaying quest state, current character, location, lobby state.\nThis can be disabled/enabled in real-time by going into this mod's 'Configure' option.",
+  "ModDll": "gbfr.discord.richpresence.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/gbfr.discord.richpresence.dll",
+  "ModR2RManagedDll64": "x64/gbfr.discord.richpresence.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "gbfr.discord.richpresence.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubRelease": {
+      "UserName": "Nenkai",
+      "RepositoryName": "gbfr.discord.richpresence",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    },
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "Reloaded.Memory.SigScan.ReloadedII",
+    "reloaded.sharedlib.hooks",
+    "SharedScans.Reloaded"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "granblue_fantasy_relink.exe"
+  ],
+  "ProjectUrl": ""
+}

@@ -1,0 +1,160 @@
+QuestId,IslandTableKey,IslandTableImage
+100000,Prologue: The Forgotten Sky,st08
+100001,Chapter 1: The Western Frontier,st00
+100002,Prologue: The Forgotten Sky,st08
+100003,Chapter 1: The Western Frontier,st00
+100005,Prologue: The Forgotten Sky,st08
+100006,Prologue: The Forgotten Sky,st08
+101000,Chapter 1: The Western Frontier,folca
+101001,Chapter 2: Tempest On The Horizon,st01
+101002,Chapter 2: Tempest On The Horizon,st01
+101003,Chapter 3: Creation Of The Stars,st03
+101004,Chapter 3: Creation Of The Stars,st03
+101005,Chapter 3: Creation Of The Stars,st03
+101F00,Chapter 2: Tempest On The Horizon,st08
+102000,Chapter 4: Skies Forever Blue,folca
+102002,Chapter 4: Skies Forever Blue,st02
+102F00,Chapter 4: Skies Forever Blue,st08
+103001,Chapter 5: Shadows In The Snowscape,st03
+103F00,Chapter 5: Shadows In The Snowscape,st03
+104000,Chapter 6: In Search Of Hope,seedhollow
+104001,Chapter 6: In Search Of Hope,st04
+104003,Chapter 6: In Search Of Hope,st04
+104F00,Chapter 6: In Search Of Hope,st03
+104F01,Chapter 6: In Search Of Hope,st08
+105001,Chapter 7: Warning Signs,st05
+105002,Chapter 7: Warning Signs,st08
+105F00,Chapter 7: Warning Signs,st08
+105F01,Chapter 7: Warning Signs,st08
+106000,Chapter 8: Relink,st06
+106001,Chapter 8: Relink,st06
+106002,Chapter 8: Relink,st06
+106F00,Chapter 8: Relink,st08
+107000,Chapter 9: Opposing Wills,st06
+107001,Chapter 9: Opposing Wills,st07
+107002,Chapter 9: Opposing Wills,st07
+107F00,Chapter 9: Opposing Wills,st08
+108000,Final Chapter: Id,st08
+108001,Final Chapter: Id,st08
+108002,Final Chapter: Id,st08
+108F00,Final Chapter: Id,st08
+401301,LOCATION_TST_01,location_00
+401303,LOCATION_TST_02,location_01
+401305,LOCATION_1ST_02,location_03
+401306,LOCATION_1ST_01,location_02
+401310,LOCATION_TST_02,location_01
+401311,LOCATION_1ST_01,location_02
+401315,LOCATION_TST_02,location_01
+401316,LOCATION_1ST_03,location_04
+401317,LOCATION_TST_02,location_01
+401318,LOCATION_TST_02,location_01
+402301,LOCATION_4ST_01,location_12
+402302,LOCATION_4ST_02,location_13
+402304,LOCATION_6ST_01,location_16
+402306,LOCATION_6ST_01,location_16
+402308,LOCATION_5ST_01,location_14
+402309,LOCATION_5ST_02,location_15
+402310,LOCATION_4ST_01,location_12
+402312,LOCATION_3ST_04,location_11
+402313,LOCATION_1ST_04,location_24
+402314,LOCATION_3ST_01,location_08
+402315,LOCATION_3ST_03,location_10
+402316,LOCATION_TST_02,location_01
+402317,LOCATION_4ST_02,location_13
+403201,LOCATION_1ST_05,location_05
+403202,LOCATION_3ST_01,location_08
+403301,LOCATION_TST_01,location_00
+403302,LOCATION_1ST_02,location_03
+403303,LOCATION_TST_02,location_01
+403307,LOCATION_4ST_01,location_12
+403308,LOCATION_4ST_01,location_12
+403309,LOCATION_7ST_01,location_19
+403311,LOCATION_5ST_02,location_15
+403312,LOCATION_TST_02,location_01
+404101,LOCATION_1ST_04,location_24
+404204,LOCATION_7ST_04,location_20
+404309,LOCATION_6ST_01,location_16
+404310,LOCATION_1ST_05,location_05
+404311,LOCATION_5ST_01,location_14
+404313,LOCATION_5ST_01,location_14
+404315,LOCATION_6ST_01,location_16
+404316,LOCATION_3ST_01,location_08
+404317,LOCATION_3ST_01,location_08
+405101,LOCATION_1ST_04,location_24
+405201,LOCATION_3ST_04,location_11
+405202,LOCATION_4ST_01,location_12
+405203,LOCATION_5ST_02,location_15
+405205,LOCATION_7ST_04,location_20
+405206,LOCATION_3ST_01,location_08
+405207,LOCATION_6ST_01,location_16
+405208,LOCATION_1ST_04,location_24
+405302,LOCATION_5ST_02,location_15
+405303,LOCATION_4ST_02,location_13
+405304,LOCATION_1ST_04,location_24
+405305,LOCATION_3ST_04,location_11
+405308,LOCATION_5ST_01,location_14
+405309,LOCATION_2ST_02,location_07
+405310,LOCATION_5ST_01,location_14
+405311,LOCATION_7ST_01,location_19
+406323,LOCATION_7ST_01,location_19
+406324,LOCATION_TST_02,location_01
+406325,LOCATION_5ST_02,location_15
+406327,LOCATION_3ST_01,location_08
+406330,LOCATION_4ST_01,location_12
+406331,LOCATION_1ST_04,location_24
+406332,LOCATION_3ST_04,location_11
+406333,LOCATION_5ST_02,location_15
+406334,LOCATION_3ST_01,location_08
+406335,LOCATION_6ST_01,location_16
+406337,LOCATION_6ST_02,location_17
+406338,LOCATION_7ST_04,location_20
+406351,LOCATION_1ST_05,location_05
+406352,LOCATION_4ST_02,location_13
+406353,LOCATION_1ST_04,location_24
+406354,LOCATION_3ST_01,location_08
+406355,LOCATION_TST_02,location_01
+406356,LOCATION_1ST_01,location_02
+406357,LOCATION_1ST_02,location_03
+406358,LOCATION_3ST_03,location_10
+406359,LOCATION_4ST_01,location_12
+406360,LOCATION_6ST_01,location_16
+406361,LOCATION_6ST_01,location_16
+406364,LOCATION_3ST_02,location_09
+406365,LOCATION_3ST_02,location_09
+406366,LOCATION_5ST_02,location_15
+406367,LOCATION_5ST_01,location_14
+407101,LOCATION_8ST_01,location_21
+407301,LOCATION_5ST_02,location_15
+407302,LOCATION_4ST_02,location_13
+407303,LOCATION_1ST_04,location_24
+407304,LOCATION_3ST_04,location_11
+407305,LOCATION_3ST_02,location_09
+407306,LOCATION_4ST_01,location_12
+407307,LOCATION_5ST_02,location_15
+407308,LOCATION_3ST_04,location_11
+407309,LOCATION_1ST_01,location_02
+407310,LOCATION_5ST_02,location_15
+407311,LOCATION_3ST_04,location_11
+407312,LOCATION_6ST_01,location_16
+407313,LOCATION_7ST_01,location_19
+407314,LOCATION_7ST_01,location_19
+407315,LOCATION_7ST_01,location_19
+407316,LOCATION_1ST_04,location_24
+407317,LOCATION_6ST_03,location_18
+407318,LOCATION_TST_01,location_00
+407319,LOCATION_4ST_02,location_13
+407320,LOCATION_6ST_04,location_30
+407321,LOCATION_6ST_04,location_30
+407322,LOCATION_5ST_01,location_14
+407323,LOCATION_8ST_01,location_21
+407324,LOCATION_4ST_01,location_12
+407325,LOCATION_5ST_01,location_14
+500A00,,folca
+501003,,seedhollow
+5F0001,,grandcypher
+601000,,grandcypher
+602000,,grandcypher
+603000,,grandcypher
+710000,,seedhollow
+710001,,seedhollow
+720018,,grandcypher
