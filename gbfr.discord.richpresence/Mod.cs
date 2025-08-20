@@ -76,6 +76,8 @@ public class Mod : ModBase // <= Do not Remove.
     public Dictionary<uint, string> _questMap = [];
     public Dictionary<uint, (string? LocationKey, string? LocationImage)> _questToLocation = [];
 
+    private DiscordSocialClient _discordSocialClient;
+
     public Mod(ModContext context)
     {
         _modLoader = context.ModLoader;
@@ -119,8 +121,12 @@ public class Mod : ModBase // <= Do not Remove.
             return;
         }
 
+        _discordSocialClient = new DiscordSocialClient(_logger);
+        _discordSocialClient.Initialize();
+
         _logger.WriteLine($"[{_modConfig.ModId}] Database loaded.", System.Drawing.Color.Green);
 
+        /*
         _gameStateHook = new GameStateHook(_hooks);
         _gameStateHook.Init(_startupScanner);
 
@@ -137,6 +143,7 @@ public class Mod : ModBase // <= Do not Remove.
 
         _timer = new System.Timers.Timer(TimeSpan.FromSeconds(3)) { AutoReset = true };
         _timer.Elapsed += OnTimerTick;
+        */
     }
 
     private void InitializeDiscordRpc()
@@ -145,9 +152,23 @@ public class Mod : ModBase // <= Do not Remove.
         {
             _rpc = new DiscordRpcClient("1405660886399586304");
             _rpc.OnReady += Rpc_OnReady;
-            //_rpc.RegisterUriScheme(executable: $"explorer steam://joinlobby/{881020}/");
+            _rpc.OnError += Mod_OnError;
+
+            _rpc.RegisterUriScheme("881020");
+
+            // 16/08/2025 - Sending invites doesn't work. Empty message sent plus:
+            // 'Your message could not be delivered. This is usually because you don't share a server with the recipient or the recipient is only accepting direct messages from friends."
+            // Unknown Session '10020' when sending invites after checking the discord console.
+            // Supposedly discord is blocking access to this.
+
+            // Checked discord developers discord - 'Cannot send game invite (Rich presence, desktop)' thread in #social-sdk-dev-help, exact same issue.
+            // Presumably they want us to use the Discord Social SDK. Don't know the underlying issue though.
+
+            // They also don't want us to redistribute the sdk extracted from unity. God, awesome SDK design right there.
+
             //_rpc.Subscribe(EventType.Join);
             //_rpc.OnJoin += _rpc_OnJoin;
+            //_rpc.OnJoinRequested += _rpc_OnJoinRequested;
 
             _rpc.Initialize();
 
@@ -168,7 +189,7 @@ public class Mod : ModBase // <= Do not Remove.
 
             _rpc.ClearPresence();
             _rpc.OnReady -= Rpc_OnReady;
-            _rpc.Deinitialize();
+            _rpc.Dispose();
             _rpc = null;
 
             _logger.WriteLine($"[{_modConfig.ModId}] Discord RPC shutdown.", System.Drawing.Color.Green);
@@ -404,18 +425,21 @@ public class Mod : ModBase // <= Do not Remove.
 
         if (_networkSystemHooks.IsNetworkInterfaceUp && _networkSystemHooks.IsInLobby)
         {
-            presence.WithState("Online Lobby")
-                .WithParty(new Party() { ID = "dummy", Max = 4, Size = _networkSystemHooks.NumPlayersInLobby });
-
-            /*
             if (_networkSystemHooks.LobbyID != 0)
             {
-                presence.WithSecrets(new Secrets()
+                presence.WithState("Online Lobby")
+                    .WithParty(new Party() { ID = _networkSystemHooks.LobbyID.ToString(), Max = 4, Size = _networkSystemHooks.NumPlayersInLobby, Privacy = Party.PrivacySetting.Public });
+
+                /*
+                if (_networkSystemHooks.LobbyID != 0)
                 {
-                    JoinSecret = _networkSystemHooks.LobbyID.ToString(),
-                });
+                    presence.WithSecrets(new Secrets()
+                    {
+                        JoinSecret = _networkSystemHooks.LobbyID.ToString(),
+                    });
+                }
+                */
             }
-            */
         }
 
         presence.WithAssets(new Assets()
@@ -428,6 +452,11 @@ public class Mod : ModBase // <= Do not Remove.
 
         _rpc?.SetPresence(presence);
         _lastUpdated = now;
+    }
+
+    private void Mod_OnError(object sender, DiscordRPC.Message.ErrorMessage args)
+    {
+        throw new NotImplementedException();
     }
 
     #region Standard Overrides

@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Discord Social SDK Binaries
+/DiscordSocialSDKWrapper/discord_partner_sdk.dll
