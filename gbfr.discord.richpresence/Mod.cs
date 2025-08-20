@@ -145,9 +145,21 @@ public class Mod : ModBase // <= Do not Remove.
         {
             _rpc = new DiscordRpcClient("1405660886399586304");
             _rpc.OnReady += Rpc_OnReady;
-            //_rpc.RegisterUriScheme(executable: $"explorer steam://joinlobby/{881020}/");
+
+            // 16/08/2025 - Sending invites doesn't work. Empty message sent plus:
+            // 'Your message could not be delivered. This is usually because you don't share a server with the recipient or the recipient is only accepting direct messages from friends."
+            // Unknown Session '10020' when sending invites after checking the discord console.
+            // Supposedly discord is blocking access to this.
+
+            // Checked discord developers discord - 'Cannot send game invite (Rich presence, desktop)' thread in #social-sdk-dev-help, exact same issue.
+            // Presumably they want us to use the Discord Social SDK. Don't know the underlying issue though.
+
+            // They also don't want us to redistribute the sdk extracted from unity. God, awesome SDK design right there.
+
+            // _rpc.RegisterUriScheme("881020");
             //_rpc.Subscribe(EventType.Join);
             //_rpc.OnJoin += _rpc_OnJoin;
+            //_rpc.OnJoinRequested += _rpc_OnJoinRequested;
 
             _rpc.Initialize();
 
