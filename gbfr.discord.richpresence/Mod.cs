@@ -420,6 +420,7 @@ public class Mod : ModBase // <= Do not Remove.
                     if (_localizedUiKeys.TryGetValue(diffName, out string? localizedDiffStr))
                         questName += $" ({localizedDiffStr})";
                 }
+
                 presence.Details = questName;
 
                 if (_questToLocation.TryGetValue(questId, out (string? LocationKey, string? LocationImage) location))
@@ -431,6 +432,12 @@ public class Mod : ModBase // <= Do not Remove.
                         largeImageText = locationName;
                     }
                 }
+            }
+            else if (category == 8)
+            {
+                presence.Details = $"The Conflux ({questId:X})";
+                largeImageKey = location.LocationImage;
+                largeImageText = "The Conflux";
             }
             else
             {

@@ -38,271 +38,382 @@ Quest/Stage Id,Name,LargeImageKey
 108001,Final Chapter: Id,st08
 108002,Final Chapter: Id,st08
 108F00,Final Chapter: Id,st08
-200000,A Lingering Regret
-200001,Save the Crustaceans
-200002,Miracle Mushrooms
-200003,Annoying Neighbors
-200100,Results Guaranteed
-200101,Pebbles of Perfection
-200102,Infested Skyways
-200103,Soaring Dream
-200104,Long Time No Fix
-200200,Memories on Ice
-200201,Vulnerable Nights
-200400,The Gourmet Way
-200401,Fresh Material
-201002,A Curious Charm
-201005,Propeller Problems
-201006,Support Our Troops
-201007,On the Tip of My Chip
-201102,En-Raptored
-202002,Hands-On Research
-202005,Forget Me Not
-202006,Everything in Moderation
-202007,Collecting Godstones
-202010,Cleansing the Dead
-203006,Securing the Homestead
-203007,Stuffed Stocks
-203011,Sculpting Fire
-203111,Sculpting Ice
-203211,Sculpting Earth
-203311,Sculpting Wind
-204005,An Eyeful
-204006,Glory Days
-204007,Help Your Fellow Farer
-204011,Dubious Literature
-204012,Oddly Specific Request
-204013,Avenge the Dead
-204106,Futureproof Trading
-204107,Presentproof Investing
-204113,Frozen Menace
-205000,How Does Siero Do It?
-205001,Astral Research Notes
-205002,Be Legendary
-210220,The Forbidden Spirit
-210221,Icey Interior
-210223,To Whirl Again
-210225,Trowel and Error
-210227,Family Reporting
-210228,Wolves at the Door
-210229,Aid from Afar
-210420,Bug Hunt
-210421,A Barrold of My Own
-210423,Red-Hot Seller
-210425,Out of Serpentine Spite
-210427,Violent Requiem
-210428,Wrath of the Sword Veil
+200000,"A Lingering Regret"
+200001,"Save the Crustaceans"
+200002,"Miracle Mushrooms"
+200003,"Annoying Neighbors"
+200100,"Results Guaranteed"
+200101,"Pebbles of Perfection"
+200102,"Infested Skyways"
+200103,"Soaring Dream"
+200104,"Long Time No Fix"
+200200,"Memories on Ice"
+200201,"Vulnerable Nights"
+210220,"The Forbidden Spirit"
+210221,"Icey Interior"
+210223,"To Whirl Again"
+210225,"Trowel and Error"
+210227,"Family Reporting"
+210228,"Wolves at the Door"
+210229,"Aid from Afar"
+200400,"The Gourmet Way"
+200401,"Fresh Material"
+210420,"Bug Hunt"
+210421,"A Barrold of My Own"
+210423,"Red-Hot Seller"
+210425,"Out of Serpentine Spite"
+210427,"Violent Requiem"
+210428,"Wrath of the Sword Veil"
+201002,"A Curious Charm"
+201005,"Propeller Problems"
+201006,"Support Our Troops"
+201007,"On the Tip of My Chip"
 211021,"Eye for an Eye, Quake for a Dile"
-211023,Loathsome Wings
-211025,Smith Smarter
-211027,Cooling Bones
-211030,Magimorphosis
-211121,Sensitive Technology
-211123,Soul in the Machine
-211125,Goopy Research
-211130,Hidden Lesson
-211230,Into the Unknown
-211330,Classroom Science
-211430,Expecting the Expected
-211530,Windy Memories
-212021,First Step is the Hardest
+211023,"Loathsome Wings"
+211025,"Smith Smarter"
+211027,"Cooling Bones"
+211030,"Magimorphosis"
+201102,"En-Raptored"
+211121,"Sensitive Technology"
+211123,"Soul in the Machine"
+211125,"Goopy Research"
+211130,"Hidden Lesson"
+211230,"Into the Unknown"
+211330,"Classroom Science"
+211430,"Expecting the Expected"
+211530,"Windy Memories"
+202002,"Hands-On Research"
+202005,"Forget Me Not"
+202006,"Everything in Moderation"
+202007,"Collecting Godstones"
+202010,"Cleansing the Dead"
+212021,"First Step is the Hardest"
 212024,"Wreck, Reduce, Recycle"
-212026,Iced Water Supplies
-212030,Fiery Commerce
-212031,Nightmare of a Shadow
-212130,Light and Shadow
-212230,Study with Care
-212330,Mother Water
-212430,From the Soil
-212530,As the Wind Blows
-212630,Squishy Lies the Crown
+212026,"Iced Water Supplies"
+212030,"Fiery Commerce"
+212031,"Nightmare of a Shadow"
+212130,"Light and Shadow"
+212230,"Study with Care"
+212330,"Mother Water"
+212430,"From the Soil"
+212530,"As the Wind Blows"
+203006,"Securing the Homestead"
+203007,"Stuffed Stocks"
+203011,"Sculpting Fire"
 213021,"Try, Try Again"
-213022,Strong as Hell
-213024,A Vision of Gates
-213026,A Vision of Vitality
-213032,A Vision of Sequestration
-213033,A Vision of Fortification
-213034,A Vision of Dread
-214024,Degoop the Farm
-214026,An Eye for Business
-214027,Dynamic Design
-214030,Within the Flickering Flame
-214033,Symbol of the Hordes
-214034,Regret and Repentance
-214035,In Defense of the City
-214130,To Illuminate All Creation
-214135,Arts Long Lost
-214230,Voids Beyond
+213022,"Strong as Hell"
+213024,"A Vision of Gates"
+213026,"A Vision of Vitality"
+213032,"A Vision of Sequestration"
+213033,"A Vision of Fortification"
+213034,"A Vision of Dread"
+203111,"Sculpting Ice"
+203211,"Sculpting Earth"
+203311,"Sculpting Wind"
+204005,"An Eyeful"
+204006,"Glory Days"
+204007,"Help Your Fellow Farer"
+204011,"Dubious Literature"
+204012,"Oddly Specific Request"
+204013,"Avenge the Dead"
+214024,"Degoop the Farm"
+214026,"An Eye for Business"
+214027,"Dynamic Design"
+214030,"Within the Flickering Flame"
+214033,"Symbol of the Hordes"
+214034,"Regret and Repentance"
+214035,"In Defense of the City"
+204106,"Futureproof Trading"
+204107,"Presentproof Investing"
+204113,"Frozen Menace"
+214130,"To Illuminate All Creation"
+214135,"Arts Long Lost"
+214230,"Voids Beyond"
 214330,"Absolute, Absolute Zero"
-214430,Earth's Bounty
-214530,Shifting Winds
-214630,Slime After Slime
-290002,Save the Crustaceans Part Deux
-290003,Save the Crustaceans the Third
-290004,Save the Crustaceans Reloaded
-290005,Save the Crustaceans Beyond
-290006,Save the Crustaceans Neo
-290007,Save the Crustaceans Returns
-290008,Save the Crustaceans Prime
-290009,Save the Crustaceans New Dawn
-290010,Save the Crustaceans Chronicles
-290011,Save the Crustaceans Origins
-290012,Save the Crustaceans Supremacy
-290013,Save the Crustaceans Infinity
-290014,Save the Crustaceans Rises
-290015,Save the Crustaceans Finale
-300000,Fate - I've Got Your Back
-300002,Fate - Family Is Everything
-300003,"Fate - Down, but Not Out"
-300004,Fate - It's Just a Phase
-300005,Fate - Words Left Unspoken
-300006,Fate - Uninvited Guests
-300007,Fate - Warm Threads
-300008,Fate - Ludwin and Hans
-300009,Fate - Vane the Squire
-300010,Fate - Spark of Change
-300011,Fate - Seedhollow's Armed Forces
-300012,Fate - The Deceitful Nobleman
-300013,Fate - The Hottest Fishing Spot
-300014,Fate - Narmaya's Chosen Path
-300015,Fate - One-Man Army
-300016,Fate - A Modest Gift
-300017,Fate - The Woman Who Pines for Death
-300018,Fate - An Artist's Pain
-300019,Fate - Confronted by the Past
-300021,Fate - Wind
-300022,Fate - Ticking Time Bomb
-300023,Fate - A Dragon in Sheep's Clothing
-301000,Fate - Pushing Forward
-301002,Fate - Wraithwing Eggs
-301003,Fate - Straighten Up and Fly Right
-301004,Fate - Change of Heart
-301005,Fate - So Long as We Draw Breath
-301006,Fate - Crystal of Fortification
-301007,Fate - Searching for Happiness
-301008,Fate - Learning Together
-301009,Fate - Lost Knight
-301010,Fate - The Corps's Biggest Test
-301011,Fate - A Little Help from the Shadows
-301012,Fate - Soupstock's Trap
-301013,Fate - The Votes Are In
-301014,Fate - A Greater Whole
-301015,Fate - A Duel for the Ages
-301016,Fate - Crimson and Ebony
-301017,Fate - Vestiges
-301018,Fate - Sibling Squabble
-301019,Fate - Day of Reckoning
-301021,Fate - Illusion
-301022,Fate - Righteous Execution
-301023,Fate - A Clash of the Titans
-401301,Make Our Skies Safe Again
-401303,Worried about Papa
-401305,Fort Fumigation
-401306,Defeat-*wheeze*-Goblin Boss
-401310,Bash the Goblin Hordes
-401311,Guard Our Hometown
-401315,Protect Our Woods
-401316,Tomorrow's Prayers
-402301,Rilla Done Did It
-402302,Golemology 101: Desert Golems
-402304,On the Front Lines
-402306,I See a Bloody Vision
-402308,Sweep the Volcano
-402309,The Saga Continues: Fire
-402310,Dagger Really Done Did It
-402312,The Saga Continues: Ice
-402313,Saga Grande: The Beginning
+214430,"Earth's Bounty"
+214530,"Shifting Winds"
+290002,"Save the Crustaceans Part Deux"
+290003,"Save the Crustaceans the Third"
+290004,"Save the Crustaceans Reloaded"
+290005,"Save the Crustaceans Beyond"
+290006,"Save the Crustaceans Neo"
+290007,"Save the Crustaceans Returns"
+290008,"Save the Crustaceans Prime"
+290009,"Save the Crustaceans New Dawn"
+290010,"Save the Crustaceans Chronicles"
+290011,"Save the Crustaceans Origins"
+290012,"Save the Crustaceans Supremacy"
+290013,"Save the Crustaceans Infinity"
+290014,"Save the Crustaceans Rises"
+290015,"Save the Crustaceans Finale"
+212630,"Squishy Lies the Crown"
+214630,"Slime After Slime"
+205000,"How Does Siero Do It?"
+205001,"Astral Research Notes"
+205002,"Be Legendary"
+290101,"Eureka! They Do Exist!"
+290102,"Go! Nab Those Dark Crustaceans!"
+290103,"Yikes! I'm Not Going in There!"
+290104,"Wait! I Thought I Saw One!"
+290105,"Curtain Call! Long Live the Pincers!"
+220001,"Gods of a World Beyond"
+220002,"A Glint of Things to Come"
+220003,"Hidden Gems of Aquila"
+220004,"Reviving The Devil"
+220005,"Into the Sephira Abyss"
+220101,"Back Alley Mystery"
+220102,"More Strangeness Afoot"
+230001,"Trial of Vermillion and Emerald"
+230002,"Trial of Azure and Gold"
+230003,"Trial of White and Black"
+230004,"Mazurka of War"
+220111,"Chasing Rumors: The Silver Grail"
+220112,"Chasing Rumors: The Golden Grail"
+240121,"Chasing Rumors: Red Tri-Stars"
+230301,"Count One: The Weapon Awakens"
+230302,"Count Two: Rise Up"
+230303,"Count Three: Final Ascension"
+220301,"No Time to Snooze"
+220302,"Awakened Emotion"
+220303,"Dawn of a New Awakening"
+230311,"Count One: Start of the End"
+230312,"Count Two: Right on Track"
+230313,"Count Three: Last Stop"
+220311,"Terminus 2"
+220312,"Me and My Big Mouth"
+220313,"Beyond the Terminus"
+230321,"TKO"
+230391,"Push the Limits"
+230401,"Some Assembly Required"
+230411,"The Crew That Never Rests"
+220401,"All That Glitters"
+230402,"Like a Fish out of Magma"
+220411,"Pry It from My Claws"
+300000,"I've Got Your Back"
+300002,"Family Is Everything"
+300003,"Down, but Not Out"
+300004,"It's Just a Phase"
+300005,"Words Left Unspoken"
+300006,"Uninvited Guests"
+300007,"Warm Threads"
+300008,"Ludwin and Hans"
+300009,"Vane the Squire"
+300010,"Spark of Change"
+300011,"Seedhollow's Armed Forces"
+300012,"The Deceitful Nobleman"
+300013,"The Hottest Fishing Spot"
+300014,"Narmaya's Chosen Path"
+300015,"One-Man Army"
+300016,"A Modest Gift"
+300017,"The Woman Who Pines for Death"
+300018,"An Artist's Pain"
+300019,"Confronted by the Past"
+300021,"Wind"
+300022,"Ticking Time Bomb"
+300023,"A Dragon in Sheep's Clothing"
+300024,"Fallen Wolves"
+300025,"Lies in the Snow"
+300026,"Solo Investigation"
+300027,"Infiltration"
+300028,"Fixing Mistakes"
+300029,"Inherit the Past"
+301000,"Pushing Forward"
+301002,"Wraithwing Eggs"
+301003,"Straighten Up and Fly Right"
+301004,"Change of Heart"
+301005,"So Long as We Draw Breath"
+301006,"Crystal of Fortification"
+301007,"Searching for Happiness"
+301008,"Learning Together"
+301009,"Lost Knight"
+301010,"The Corps's Biggest Test"
+301011,"A Little Help from the Shadows"
+301012,"Soupstock's Trap"
+301013,"The Votes Are In"
+301014,"A Greater Whole"
+301015,"A Duel for the Ages"
+301016,"Crimson and Ebony"
+301017,"Vestiges"
+301018,"Sibling Squabble"
+301019,"Day of Reckoning"
+301021,"Illusion"
+301022,"Righteous Execution"
+301023,"Clash of the Titans"
+301024,"Feast of Frenzy"
+301025,"Tragedy of Blood"
+301026,"Sword Veil Standoff"
+301027,"True Thunder"
+301028,"At the End of the World"
+301029,"Axiom of Our Provenance"
+401301,"Make Our Skies Safe Again"
+401303,"Worried about Papa"
+401305,"Fort Fumigation"
+401306,"Defeat—*wheeze*—Goblin Boss"
+401310,"Bash the Goblin Hordes"
+401311,"Guard Our Hometown"
+401315,"Protect Our Woods"
+401316,"Tomorrow's Prayers"
+402301,"Rilla Done Did It"
+402302,"Golemology 101: Desert Golems"
+402304,"On the Front Lines"
+402306,"I See a Bloody Vision"
+402308,"Sweep the Volcano"
+402309,"The Saga Continues: Fire"
+402310,"Dagger Really Done Did It"
+402312,"The Saga Continues: Ice"
+402313,"Saga Grande: The Beginning"
 402314,"Spare the Rod, Spoil the Valley"
-402315,Eye Have a Problem
-402316,Only You Can Prevent Forest Flyers
-403201,Delts of Our Lives
-103202,Hide and Chic
-403301,Rule the Skies
-403302,The Juice of Jealousy
-403303,Unthinning the Troops
-403307,Protect the Rep
-403308,Collector's Digest
+402315,"Eye Have a Problem"
+402316,"Only You Can Prevent Forest Flyers"
+403201,"Delts of Our Lives"
+403202,"Hide and Chic"
+403301,"Rule the Skies"
+403302,"The Juice of Jealousy"
+403303,"Unthinning the Troops"
+403307,"Protect the Rep"
+403308,"Collector's Digest"
 403309,"Looming Tower, Leering Eye"
-403311,I See a Flaming Vision
-403312,Drumsticks au Griffin
-404101,Wings of Antiquity
-404204,Dark Refrain
-404309,No One Likes Leftovers
-404310,I See a Deathly Vision
-404311,The Next Hot Topic
-404313,Golemology 102: Volcanic Golems
-404315,Seeds of Trouble
-404316,A Bone to Peak
-404317,Absolutely No Trespassers!
-405101,License to Thrill
-405201,Saga Illustrated: The Beginning
-405202,Learning from the Past
-405203,Saga Illustrated: Inferno
-405205,To Know the Unknowable
-405206,General Investigation: Gallanza
-405207,General Investigation: Maglielle
-405208,General Investigation: Id
-405302,Wings of Conflagration
-405303,Wings of Upheaval
-405304,Wings of the Storm
-405305,Wings of Rime
-405308,Gulp... So These Are the Rumored Monsters
-405309,Assault Formation!
-405310,Great Goblins of Fire
-405311,Shedding Light on the Pillar
-406101,Back to the Fated Land
-406323,I See a Chromatic Vision
-406324,Revenge of the Hordes
-406325,Hope in the Machine
-406327,Hallowed Be Thy Ground
-406330,The Saga Continues: Earth
-406331,The Saga Continues: Wind
-406332,Saga Illustrated: Crystal
-406333,Saga Illustrated: Hellfire
-406334,The Saga Continues: Silver
-406335,Saga Illustrated: Veil
-406337,Id Bears Repeating
-406338,Saga Grande: Happily Ever After
-406351,Roost and Reign
-406352,Boss Done Wants It Did
-406353,Know Your Enemy
-406354,Serenity Upon the Mount
-406355,Golemology 103: Forest Golems
-406356,A New Breed
+403311,"I See a Flaming Vision"
+403312,"Drumsticks au Griffin"
+404101,"Wings of Antiquity"
+404204,"Dark Refrain"
+404309,"No One Likes Leftovers"
+404310,"I See a Deathly Vision"
+404311,"The Next Hot Topic"
+404313,"Golemology 102: Volcanic Golems"
+404315,"Seeds of Trouble"
+404316,"A Bone to Peak"
+404317,"Absolutely No Trespassers!"
+405101,"License to Thrill"
+405309,"Assault Formation!"
+405310,"Great Goblins of Fire"
+405311,"Shedding Light on the Pillar"
+405201,"Saga Illustrated: The Beginning"
+405202,"Learning from the Past"
+405203,"Saga Illustrated: Inferno"
+405205,"To Know the Unknowable"
+405206,"General Investigation: Gallanza"
+405207,"General Investigation: Maglielle"
+405208,"General Investigation: Id"
+405302,"Wings of Conflagration"
+405303,"Wings of Upheaval"
+405304,"Wings of the Storm"
+405305,"Wings of Rime"
+405308,"Gulp... So These Are the Rumored Monsters"
+406101,"Back to the Fated Land"
+406323,"I See a Chromatic Vision"
+406324,"Revenge of the Hordes"
+406325,"Hope in the Machine"
+406327,"Hallowed Be Thy Ground"
+406330,"The Saga Continues: Earth"
+406331,"The Saga Continues: Wind"
+406332,"Saga Illustrated: Crystal"
+406333,"Saga Illustrated: Hellfire"
+406334,"The Saga Continues: Silver"
+406335,"Saga Illustrated: Veil"
+406337,"Id Bears Repeating"
+406338,"Saga Grande: Happily Ever After"
+406351,"Roost and Reign"
+406352,"Boss Done Wants It Did"
+406353,"Know Your Enemy"
+406354,"Serenity Upon the Mount"
+406355,"Golemology 103: Forest Golems"
+406356,"A New Breed"
 406357,"Death, Taxes, and Goblins"
-406358,Icy Eye on the Holy Prize
-406359,Rumble in the Desert
-406360,I See a Grim Vision
-406361,Slimepede
-406364,Throw a Smith a Bone
-406365,Armor Is Best Served Cold
-406366,A Heated Rivalry
-407101,The Final Report
-407301,Blazing Trial
-407302,Grounded Trial
-407303,Stormy Trial
-407304,Frigid Trial
-407305,Worst Vacation Ever
-407306,Trade Barriers
-407307,Melting Pot of Hostility
-407308,Banquet of Ice and Corpses
-407309,For a Freer Folca
-407310,A Quest of Fire and Earth
-407311,A Quest of Frost and Storm
-407312,The Wolf and the Veil
-407313,Calamity Incarnate
-407314,As Fierce as the Silver Wolf
-407315,Memories of Fire
-407316,Thunderbolts and Lightning
-407317,Into the Abyss
-407318,The Tale of Bahamut's Rage
-407319,The Automagod Strikes Back
-407320,The Final Vision
-407321,Zero
-407322,Lock Horns
-407323,Dark Swordman's Nightmare
-407324,Pageant of Might and Magic
-407325,Zathba's 'Volunteers'
+406358,"Icy Eye on the Holy Prize"
+406359,"Rumble in the Desert"
+406360,"I See a Grim Vision"
+406361,"Slimepede"
+406365,"Armor Is Best Served Cold"
+406366,"A Heated Rivalry"
+406364,"Throw a Smith a Bone"
+407101,"The Final Report"
+407301,"Blazing Trial"
+407302,"Grounded Trial"
+407303,"Stormy Trial"
+407304,"Frigid Trial"
+407305,"Worst Vacation Ever"
+407306,"Trade Barriers"
+407307,"Melting Pot of Hostility"
+407308,"Banquet of Ice and Corpses"
+407309,"For a Freer Folca"
+407310,"A Quest of Fire and Earth"
+407311,"A Quest of Frost and Storm"
+407312,"The Wolf and the Veil"
+407313,"Calamity Incarnate"
+407314,"As Fierce as the Silver Wolf"
+407315,"Memories of Fire"
+407316,"Thunderbolts and Lightning"
+407317,"Into the Abyss"
+407318,"The Tale of Bahamut's Rage"
+407319,"The Automagod Strikes Back"
+407320,"The Final Vision"
+407321,"Zero"
+407322,"Lock Horns"
+407323,"Dark Swordsman's Nightmare"
+407324,"Pageant of Might and Magic"
+407325,"Zathba's "Volunteers""
+408301,"A Trial of Two Eternities"
+408305,"Sun Blotter"
+408311,"You're Being Watched"
+409303,"Abandon Hope"
+408308,"Nightmare Valley"
+408314,"Pilgrims of Self-Delusion"
+408313,"Spear of the Invincible"
+408315,"One-Woman Army"
+408310,"The General Assembly"
+409302,"Bestial Earth"
+409305,"Bestial Frost"
+409317,"Shadows of the Past: Vitality"
+409314,"Shadows of the Past: Sequestration"
+409319,"Shadows of the Past: Dread"
+409313,"Bestial Blaze"
+409308,"Incoming!"
+409320,"Bring Light to the World"
+408312,"In the Depths of Madness"
+409312,"Wildfire"
+409307,"Permafrost"
+409315,"Procession of Dragons"
+40A305,"Lightning Strikes Twice"
+409309,"Sephira's Sanguine Glimmer"
+40A304,"March of Lost Souls"
+40A303,"Weight of a Blade"
+40A302,"Survival of the Fittest"
+40A306,"All-Consuming Darkness"
+40A320,"Roar from the Heavens"
+40A311,"Terror from the Moon"
+40A301,"New World Order"
+40A308,"The Eternal Grind"
+40A312,"Mazurka of War"
+40A309,"A Reckoning for the Reckoner"
+40A314,"Let Chaos Reign"
+40A321,"Supernatural Appetite for Meat"
+40A313,"A Prayer for Black Wings' Demise"
+40A316,"The Not Forgotten Sky"
+408302,"Jumbo Crab's Title Fight"
+408306,"Gray Gear Reverberance"
+409311,"Revenge of the Ooze"
+40A307,"Flavor Blast!"
+40A310,"Tectonic Clash"
+40A322,"The Myths Are Real"
+40A323,"In the Wrong Hands"
+40A324,"The Tempest Rises"
+40A325,"Reclusive Vengeance"
+40A326,"Four Dragons of the Apocalypse"
+40A327,"Rock Around the Clock"
+40A328,"An Act of Automagod"
+40A329,"Beneath Primeval Wings"
+40A330,"Eternal Pride"
+40B301,"On the Threshold of The World"
+40B314,"On the Threshold of Chaos"
+40B313,"On the Threshold of Finality"
+40B309,"On the Threshold of Destruction"
+40B316,"On the Threshold of Provenance"
+4FE500,"Defeat—*wheeze*—Goblin Boss"
+401317,"Bash the Goblin Hordes"
+401318,"Worried about Papa"
+402317,"Golemology 101: Desert Golems"
+403313,"Wings of Antiquity"
 500000,In Town (Folca)
 500A00,In Town (Folca)
 501003,In Town (Seedhollow)
@@ -314,3 +425,4 @@ Quest/Stage Id,Name,LargeImageKey
 710000,Days of Our Zegagrande - The Automagod Strikes Back
 710001,Days of Our Zegagrande - The Final Vision
 720018,On Grandcypher
+730420, Seedhollow (Back Alley)
