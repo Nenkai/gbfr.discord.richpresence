@@ -36,12 +36,13 @@
   <ItemGroup>
   	<PackageReference Include="CsvHelper" Version="33.1.0" />
   	<PackageReference Include="DiscordRichPresence" Version="1.6.1.70" />
+  	<PackageReference Include="gbfrelink.utility.manager.Interfaces" Version="1.1.0" />
+  	<PackageReference Include="NenTools.Reloaded.ScanManager.Interfaces" Version="1.0.0" />
   	<PackageReference Include="Reloaded.Memory" Version="9.4.1" />
   	<PackageReference Include="Reloaded.Memory.Sigscan" Version="3.1.8" />
   	<PackageReference Include="Reloaded.Memory.SigScan.ReloadedII.Interfaces" Version="1.2.0" />
   	<PackageReference Include="Reloaded.Mod.Interfaces" Version="2.4.0" ExcludeAssets="runtime" />
   	<PackageReference Include="Reloaded.SharedLib.Hooks" Version="1.9.0" />
-  	<PackageReference Include="SharedScans.Interfaces" Version="1.2.0" />
   </ItemGroup>
 	
   <ItemGroup>
@@ -145,6 +146,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Preview.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Signatures\granblue_fantasy_relink_er.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Signatures\granblue_fantasy_relink.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

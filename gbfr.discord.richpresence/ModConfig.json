@@ -2,7 +2,7 @@
   "ModId": "gbfr.discord.richpresence",
   "ModName": "Discord Rich Presence Support",
   "ModAuthor": "Nenkai",
-  "ModVersion": "1.0.0",
+  "ModVersion": "1.1.0",
   "ModDescription": "Implements Discord Rich Presence for Relink, with support for displaying quest state, current character, location, lobby state.\nThis can be disabled/enabled in real-time by going into this mod's 'Configure' option.",
   "ModDll": "gbfr.discord.richpresence.dll",
   "ModIcon": "Preview.png",
@@ -46,7 +46,7 @@
   "ModDependencies": [
     "Reloaded.Memory.SigScan.ReloadedII",
     "reloaded.sharedlib.hooks",
-    "SharedScans.Reloaded"
+    "gbfrelink.utility.manager"
   ],
   "OptionalDependencies": [],
   "SupportedAppId": [

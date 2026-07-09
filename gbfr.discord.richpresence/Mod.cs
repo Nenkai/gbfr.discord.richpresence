@@ -1,4 +1,6 @@
-﻿using DiscordRPC;
+﻿using System.Timers;
+
+using DiscordRPC;
 
 using gbfr.discord.richpresence.Configuration;
 using gbfr.discord.richpresence.Template;
@@ -8,13 +10,14 @@ using Reloaded.Hooks.ReloadedII.Interfaces;
 using Reloaded.Memory.SigScan.ReloadedII.Interfaces;
 using Reloaded.Mod.Interfaces;
 
-using SharedScans.Interfaces;
-
 using CsvHelper;
 
 using System.Globalization;
 
-using System.Timers;
+
+using gbfrelink.utility.manager.Interfaces;
+
+using NenTools.Reloaded.ScanManager.Interfaces;
 
 #if DEBUG
 using System.Diagnostics;
@@ -59,7 +62,6 @@ public class Mod : ModBase // <= Do not Remove.
     private readonly IModConfig _modConfig;
 
     private static IStartupScanner? _startupScanner = null!;
-    private static ISharedScans? _sharedScans = null!;
 
     private readonly GameStateHook _gameStateHook;
     private readonly NetworkSystemHooks _networkSystemHooks;
@@ -89,20 +91,27 @@ public class Mod : ModBase // <= Do not Remove.
         // Attaches debugger in debug mode; ignored in release.
         Debugger.Launch();
 #endif
-
         var startupScannerController = _modLoader.GetController<IStartupScanner>();
         if (startupScannerController == null || !startupScannerController.TryGetTarget(out _startupScanner))
         {
-            _logger.WriteLine($"[{_modConfig.ModId}] Unable to get IStartupScanner. Rich presence will not load!");
+            _logger.WriteLine($"[{_modConfig.ModId}] IStartupScanner not found?  Rich presence will not load!", System.Drawing.Color.Red);
             return;
         }
 
-        var sharedScansController = _modLoader.GetController<ISharedScans>();
-        if (sharedScansController == null || !sharedScansController.TryGetTarget(out _sharedScans))
+        var userDefinedParamsRef = _modLoader.GetController<IUserDefinedParams>();
+        if (startupScannerController == null || !userDefinedParamsRef.TryGetTarget(out IUserDefinedParams? userDefinedParams))
         {
-            _logger.WriteLine($"[{_modConfig.ModId}] Unable to get ISharedScans. Rich presence will not load!");
+            _logger.WriteLine($"[{_modConfig.ModId}] IUserDefinedParams not found?  Rich presence will not load!", System.Drawing.Color.Red);
             return;
         }
+
+        var scanManagerRef = _modLoader.GetController<IScanManager>();
+        if (startupScannerController == null || !scanManagerRef.TryGetTarget(out IScanManager? scanManager))
+        {
+            _logger.WriteLine($"[{_modConfig.ModId}] IScanManager not found?  Rich presence will not load!", System.Drawing.Color.Red);
+            return;
+        }
+        scanManager.InitializeScans(Path.Combine(_modLoader.GetDirectoryForModId(_modConfig.ModId), "Signatures"), _modConfig.ModId);
 
         // TODO: Fetch from game data directly?
         try
@@ -119,16 +128,18 @@ public class Mod : ModBase // <= Do not Remove.
             return;
         }
 
+        string signatureGroup = userDefinedParams.IsEndlessRagnarok() ? "granblue_fantasy_relink_er" : "granblue_fantasy_relink";
+
         _logger.WriteLine($"[{_modConfig.ModId}] Database loaded.", System.Drawing.Color.Green);
 
         _gameStateHook = new GameStateHook(_hooks);
-        _gameStateHook.Init(_startupScanner);
+        _gameStateHook.Init(scanManager, signatureGroup);
 
-        _networkSystemHooks = new NetworkSystemHooks(_sharedScans);
-        _networkSystemHooks.Init(_startupScanner, _modConfig);
+        _networkSystemHooks = new NetworkSystemHooks(_hooks);
+        _networkSystemHooks.Init(scanManager, signatureGroup);
 
-        _questSystemHooks = new QuestSystemHooks(_sharedScans);
-        _questSystemHooks.Init(_modConfig);
+        _questSystemHooks = new QuestSystemHooks(_hooks);
+        _questSystemHooks.Init(scanManager, signatureGroup);
 
         if (_configuration.EnableDiscordRichPresence)
             InitializeDiscordRpc();
@@ -370,32 +381,39 @@ public class Mod : ModBase // <= Do not Remove.
             {
                 presence.Details = "Loading...";
             }
-            else if (_gameStateHook.PhaseId == 0xF06)
+            else if (_gameStateHook.PhaseId == 0xF00 || _gameStateHook.PhaseId == 0xFE0) // 0xF00 = ER Demo
             {
                 presence.Details = "In Titlescreen";
             }
         }
         else
         {
+            uint category = questId >> 20;
+            uint subCategory = (questId >> 12) & 0xFF;
+
+            string diffName = string.Empty;
+            if (category == 4) // "multi' quest
+            {
+                diffName = subCategory switch
+                {
+                    1 => "EASY",
+                    2 => "NORMAL",
+                    3 => "HARD",
+                    4 => "VERY_HARD",
+                    5 => "EXTREME",
+                    6 => "MANIAC",
+                    7 => "PROUD",
+                    8 => "CHAOS",
+                    9 => "CHAOS+",
+                    0x0A => "CHAOS++",
+                    _ => string.Empty,
+                };
+            }
+
             if (_questMap.TryGetValue(questId, out string? questName))
             {
-                uint category = questId >> 20;
-                uint subCategory = (questId >> 12) & 0xFF;
-
                 if (category == 4) // "multi' quest
                 {
-                    string diffName = subCategory switch
-                    {
-                        1 => "EASY",
-                        2 => "NORMAL",
-                        3 => "HARD",
-                        4 => "VERY_HARD",
-                        5 => "EXTREME",
-                        6 => "MANIAC",
-                        7 => "PROUD",
-                        _ => string.Empty,
-                    };
-
                     if (_localizedUiKeys.TryGetValue(diffName, out string? localizedDiffStr))
                         questName += $" ({localizedDiffStr})";
                 }
@@ -410,7 +428,13 @@ public class Mod : ModBase // <= Do not Remove.
                         largeImageText = locationName;
                     }
                 }
+            }
+            else
+            {
+                presence.Details = $"Unknown Quest {questId:X}";
 
+                if (_localizedUiKeys.TryGetValue(diffName, out string? localizedDiffStr))
+                    presence.Details += $" ({localizedDiffStr})";
             }
         }
 
