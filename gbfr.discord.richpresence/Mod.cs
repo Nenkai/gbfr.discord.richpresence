@@ -70,6 +70,7 @@ public class Mod : ModBase // <= Do not Remove.
     private DiscordRpcClient? _rpc;
     private readonly System.Timers.Timer _timer;
     private DateTimeOffset _lastUpdated;
+    private Timestamps? _startTimestamp;
     private readonly TimeSpan _updateDelaySeconds = TimeSpan.FromSeconds(3);
 
     public Dictionary<string, string> _localizedUiKeys = [];
@@ -337,6 +338,8 @@ public class Mod : ModBase // <= Do not Remove.
         if (_lastUpdated + _updateDelaySeconds > now)
             return;
 
+        _startTimestamp ??= Timestamps.Now;
+
         var presence = new RichPresence();
         uint questId = _questSystemHooks.GetCurrentQuestId();
 
@@ -462,6 +465,7 @@ public class Mod : ModBase // <= Do not Remove.
             LargeImageText = largeImageText,
         });
 
+        presence.Timestamps = _startTimestamp;
         _rpc?.SetPresence(presence);
         _lastUpdated = now;
     }
