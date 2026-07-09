@@ -465,7 +465,11 @@ public class Mod : ModBase // <= Do not Remove.
             LargeImageText = largeImageText,
         });
 
-        presence.Timestamps = _startTimestamp;
+        if (_configuration.UseStartupTimeTimestamp)
+        {
+            presence.Timestamps = _startTimestamp;
+        }
+        
         _rpc?.SetPresence(presence);
         _lastUpdated = now;
     }
