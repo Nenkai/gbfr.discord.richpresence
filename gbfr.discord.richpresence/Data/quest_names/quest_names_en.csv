@@ -352,7 +352,7 @@ Quest/Stage Id,Name,LargeImageKey
 407322,"Lock Horns"
 407323,"Dark Swordsman's Nightmare"
 407324,"Pageant of Might and Magic"
-407325,"Zathba's "Volunteers""
+407325,"Zathba's ""Volunteers"""
 408301,"A Trial of Two Eternities"
 408305,"Sun Blotter"
 408311,"You're Being Watched"
@@ -425,4 +425,6 @@ Quest/Stage Id,Name,LargeImageKey
 710000,Days of Our Zegagrande - The Automagod Strikes Back
 710001,Days of Our Zegagrande - The Final Vision
 720018,On Grandcypher
-730420, Seedhollow (Back Alley)
+730020,Tredame Stadium (Conflux)
+730090,Seedhollow (Back Alley)
+730420,Seedhollow (Back Alley)

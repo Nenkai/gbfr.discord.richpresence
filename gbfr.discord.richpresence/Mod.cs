@@ -406,9 +406,10 @@ public class Mod : ModBase // <= Do not Remove.
                     5 => "EXTREME",
                     6 => "MANIAC",
                     7 => "PROUD",
-                    8 => "CHAOS",
-                    9 => "CHAOS+",
-                    0x0A => "CHAOS++",
+                    8 => "HELL1",
+                    9 => "HELL2",
+                    0x0A => "HELL3",
+                    0x0B => "INFINITY",
                     _ => string.Empty,
                 };
             }
@@ -436,7 +437,7 @@ public class Mod : ModBase // <= Do not Remove.
             else if (category == 8)
             {
                 presence.Details = $"The Conflux ({questId:X})";
-                largeImageKey = location.LocationImage;
+                largeImageKey = "conflux";
                 largeImageText = "The Conflux";
             }
             else

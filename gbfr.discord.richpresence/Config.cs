@@ -13,8 +13,8 @@ namespace gbfr.discord.richpresence.Configuration
         public bool EnableDiscordRichPresence { get; set; } = true;
 
         [DisplayName("Use startup time for elapsed time counter")]
-        [Description("If disabled, the counter will start from 0 whenever it updates, like switching areas or entering new quests.")]
-        [DefaultValue(false)]
+        [Description("If enabled, the counter will reset every quest & fast travel.")]
+        [DefaultValue(true)]
         public bool UseStartupTimeTimestamp { get; set; } = false;
     }
 
